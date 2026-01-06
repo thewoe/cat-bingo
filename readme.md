@@ -25,7 +25,7 @@ GET {baseurl:port}/card
 * Might generalise to add support for other types of bingo that users can think of (e.g., make your own bingo on your chosen theme)
 * Support for other languages e.g., German (if I can still remember it from my GCSE back in 2018), Greek (if Duolingo actually teaches me some relevant words/phrases, although I've only got a streak of 24 days, so might be a few years yet), Spanish, and French (both once I've completed the Greek course on Duolingo)
 
-Acknowledgements:
+### Acknowledgements:
 * List of cat breeds from **Wikipedia**, images (mostly Wikimedia Commons, but check individual image credits for details)
 * **Marcel George/Laurence King Publishing** for the idea
 * **Chris's friends** at the New Year's Eve party I was invited to, for owning a copy of the game
