@@ -41,4 +41,8 @@ Does anyone ever really read the code or raw markdown version of the README?
 
 (I did just think of this, so I'll have to go back and add some fun stuff to the API code too, oops)
 
+If you are reading this, the easter eggs haven't yet been added (well, maybe some have, but it's down to you to work out what they are - isn't this all part of the game too?)
+
+Last update: 6th Jan 2026
+
 !-->
