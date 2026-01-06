@@ -4,7 +4,7 @@
 
 **What can I say...?**
 
-It's a HTML5/JS/CSS cat bingo web game (based on [the *popular* board game of the same name](https://www.laurenceking.com/products/cat-bingo?srsltid=AfmBOooKzshGlu1dIoBTBm3QPPFpcoaE0PmZSHbLiEgWiqcth1exvamt))that lets players compete to match all the breeds of cat on their bingo card first! The complete list of cat breeds, images, and image credits are from [Wikipedia](https://en.wikipedia.org/wiki/List_of_cat_breeds) (*obviously* the most reliable source of information!), and the random bingo cards contain 16 cats in a square arrangement.
+It's a HTML5/JS/CSS cat bingo web game (based on [the *popular* board game of the same name](https://www.laurenceking.com/products/cat-bingo?srsltid=AfmBOooKzshGlu1dIoBTBm3QPPFpcoaE0PmZSHbLiEgWiqcth1exvamt)) that lets players compete to match all the breeds of cat on their bingo card first! The complete list of cat breeds, images, and image credits are from [Wikipedia](https://en.wikipedia.org/wiki/List_of_cat_breeds) (*obviously* the most reliable source of information!), and the random bingo cards contain 16 cats in a square arrangement.
 
 ### Features
 
