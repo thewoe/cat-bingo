@@ -18,6 +18,14 @@ GET {baseurl:port}/call
 GET {baseurl:port}/card
 ```!-->
 
+### TODOs:
+* BingoCard.jsx: 
+    - Fix styling
+    - Fix layout (use 4x4 grid)
+    - Add collected/remove functionality (highlight the squares)
+    - Add clear all counters functionality (reset all square highlighting)
+* Add the easter eggs ;)
+
 ### Coming Soon
 * The actual game you care so much about playing (hopefully!)
 * Web sockets to facilitate multiplayer interaction (with player room codes)
@@ -29,7 +37,7 @@ GET {baseurl:port}/card
 * List of cat breeds from **Wikipedia**, images (mostly Wikimedia Commons, but check individual image credits for details)
 * **Marcel George/Laurence King Publishing** for the idea
 * **Chris's friends** at the New Year's Eve party I was invited to, for owning a copy of the game
-* **Penny**, for probably being the only person at least showing some interest in wanting to play this at some point haha :)
+* **Penny and Adam**, for probably being the only people at least showing some interest in wanting to play this at some point haha :)
 
 <!-- 
 
@@ -43,6 +51,6 @@ Does anyone ever really read the code or raw markdown version of the README?
 
 If you are reading this, the easter eggs haven't yet been added (well, maybe some have, but it's down to you to work out what they are - isn't this all part of the game too?)
 
-Last update: 6th Jan 2026
+Last update: 7th Jan 2026
 
 !-->

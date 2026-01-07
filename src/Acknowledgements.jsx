@@ -1,19 +1,23 @@
+import { useNavigate } from 'react-router';
 import './App.css';
+
 
 function Acknowledgements() {
 
   // Hmm... guessing your wondering what the point of this game is?
 
+  const navigate = useNavigate();
+
   return (
-    <>
-        <div style={{ display: 'inline-flex', alignItems: 'center', margin: '0 auto' }}>
+    <div style={{ minHeight: '100vh', minWidth: '100vw' }}>
+        <div style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', margin: '0 auto' }} onClick={() => navigate('/')}>
             <img src='https://media.wired.com/photos/5cdefc28b2569892c06b2ae4/3:2/w_2560%2Cc_limit/Culture-Grumpy-Cat-487386121-2.jpg' className="logo center" alt="Grumpy Cat" style={{ borderRadius: '150px' }} />
             <h1 style={{ paddingTop: '2%' }} className='center'>Cat Bingo</h1>
         </div>
         <h2 className='center'>Acknowledgements</h2>
         <h3>Introduction</h3>
         <p><strong>What can I say...?</strong></p>
-        <p>It's a HTML5/JS/CSS cat bingo web game (based on <a href='https://www.laurenceking.com/products/cat-bingo?srsltid=AfmBOooKzshGlu1dIoBTBm3QPPFpcoaE0PmZSHbLiEgWiqcth1exvamt' target='_blank'>the <emph>popular</emph> board game of the same name</a>) that lets players compete to match all the breeds of cat on their bingo card first! The complete list of cat breeds, images, and image credits are from <a href='https://en.wikipedia.org/wiki/List_of_cat_breeds' target='_blank'>Wikipedia</a>(<emph>obviously</emph> he most reliable source of information!), and the random bingo cards contain 16 cats in a square arrangement.</p>
+        <p>It's a HTML5/JS/CSS cat bingo web game (based on <a href='https://www.laurenceking.com/products/cat-bingo?srsltid=AfmBOooKzshGlu1dIoBTBm3QPPFpcoaE0PmZSHbLiEgWiqcth1exvamt' target='_blank'>the <em>popular</em> board game of the same name</a>) that lets players compete to match all the breeds of cat on their bingo card first! The complete list of cat breeds, images, and image credits are from <a href='https://en.wikipedia.org/wiki/List_of_cat_breeds' target='_blank'>Wikipedia</a> (<em>obviously</em> he most reliable source of information!), and the random bingo cards contain 16 cats in a square arrangement.</p>
         <h3>Features</h3>
         <p>All features coming soon</p>
         <h3>Coming Soon</h3>
@@ -32,7 +36,7 @@ function Acknowledgements() {
             <li><strong>Penny</strong>, for probably being the only person at least showing some interest in wanting to play this at some point haha :)</li>
         </ul>
         <p className="read-the-docs center">&copy; 2026 Tug O'Flaherty</p>
-    </>
+    </div>
   );
 }
 
