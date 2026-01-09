@@ -11,7 +11,8 @@ function BingoCall() {
   const [displayData, setDisplayData] = useState([]);
 
   async function fetchData() {
-  const URL = 'http://localhost:3000/call';
+  // const URL = 'http://localhost:3000/call';
+  const URL = 'https://cat-bingo-api.onrender.com/call';
   try {
     const response = await fetch(URL);
     if (!response.ok) throw new Error(`Response status: ${response.status}`);

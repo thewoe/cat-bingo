@@ -12,7 +12,8 @@ function BingoCard() {
   // This is your bingo card, use it wisely...
 
   async function fetchData() {
-    const URL = 'http://localhost:3000/card';
+    // const URL = 'http://localhost:3000/card';
+    const URL = 'https://cat-bingo-api.onrender.com/card';
     try {
       const response = await fetch(URL);
       if (!response.ok) throw new Error(`Response status: ${response.status}`);
