@@ -20,6 +20,7 @@ function App() {
         <Route exact path='/bingo-call' element={<BingoCall />} />
       </Routes>
     </BrowserRouter>
+    // 🐈‍⬛
   );
 }
 

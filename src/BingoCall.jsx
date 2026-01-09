@@ -11,13 +11,12 @@ function BingoCall() {
   const [displayData, setDisplayData] = useState([]);
 
   async function fetchData() {
-  const URL = "http://localhost:3000/call";
+  const URL = 'http://localhost:3000/call';
   try {
     const response = await fetch(URL);
     if (!response.ok) throw new Error(`Response status: ${response.status}`);
     const result = await response.json();
     setCallData(result);
-    console.log(result);
   } catch (error) {
     console.error(error.message);
   }
@@ -28,14 +27,21 @@ useEffect(() => { fetchData(); }, []);
 useEffect(() => { if (count > 0) setDisplayData(callData.slice(0, count)); }, [count, callData]);
 
 
+/*
+                            ╱|、
+                          (˚ˎ 。7  
+                           |、˜〵          
+                          じしˍ,)ノ
+
+*/
   return (
-    <div style={{ minHeight: '100vh', minWidth: '100vw' }}>
+    <div style={{ minHeight: '100%', minWidth: '100%' }}>
       <div style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', margin: '0 auto' }} onClick={() => navigate('/')}>
-        <img src='https://media.wired.com/photos/5cdefc28b2569892c06b2ae4/3:2/w_2560%2Cc_limit/Culture-Grumpy-Cat-487386121-2.jpg' className="logo center" alt="Grumpy Cat" style={{ borderRadius: '150px' }} />
+        <img src='https://media.wired.com/photos/5cdefc28b2569892c06b2ae4/3:2/w_2560%2Cc_limit/Culture-Grumpy-Cat-487386121-2.jpg' className='logo center' alt='Grumpy Cat' style={{ borderRadius: '150px' }} />
         <h1 style={{ paddingTop: '2%' }} className='center'>Cat Bingo</h1>
       </div>
       <h2 className='center'>Bingo Call</h2>
-      <div className="card" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+      <div className='card' style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
           <button style={{ margin: '2%' }} onClick={() => setCount((count) => count + 1)}>
               Next Cat!
           </button>
@@ -55,7 +61,7 @@ useEffect(() => { if (count > 0) setDisplayData(callData.slice(0, count)); }, [c
           }
           </tbody>
       </table>
-      <p className="read-the-docs center">&copy; 2026 Tug O'Flaherty</p>
+      <p className='read-the-docs center'>&copy; 2026 Tug O'Flaherty</p>
     </div>
   );
 }
