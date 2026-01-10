@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router';
 
 import './App.css';
+import meowAudioFile from './assets/meow.wav';
+import cheeringAudioFile from './assets/cheering.wav';
 
 function BingoCard() {
 
@@ -9,6 +11,9 @@ function BingoCard() {
 
   const [cardData, setCardData] = useState();
   const [score, setScore] = useState(0);
+
+  const meowRef = useRef(null);
+  const cheeringRef = useRef(null);
   // This is your bingo card, use it wisely...
 
   async function fetchData() {
@@ -25,15 +30,41 @@ function BingoCard() {
     }
   }
 
+  useEffect(() => { 
+    meowRef.current = new Audio(meowAudioFile);
+    meowRef.current.volume = 0.25;
+  }, []);
+
+  useEffect(() => { 
+    cheeringRef.current = new Audio(cheeringAudioFile);
+    cheeringRef.current.volume = 0.5;
+  }, []);
+
+  const meow = () => {
+    meowRef.current.currentTime = 0;
+    meowRef.current.play();
+  };
+
+  const cheering = () => {
+    cheeringRef.current.currentTime = 0;
+    setTimeout(() => { cheeringRef.current.play(); }, 1250);
+  };
+
+  useEffect(() => { if (score === 16) cheering() }, [score]);
+
   const toggleMark = id => {
     setCardData(prev =>
       prev.map(e =>
         e.id === id
-          ? { ...e, marked: !e.marked }
+          ? (() => {
+              if (!e.marked) meow();
+              return { ...e, marked: !e.marked };
+            })()
           : e
       )
     );
   };
+
 
   const markedCount = () => cardData ? setScore(cardData.filter(e => e.marked).length) : setScore(0);
 

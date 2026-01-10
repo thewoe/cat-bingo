@@ -8,7 +8,7 @@ It's a HTML5/JS/CSS cat bingo web game (based on [the *popular* board game of th
 
 ### Features
 
-* Simple, multiplayer cat bingo game with no maximum number of users
+* Simple, multiplayer cat bingo game for any number of players (***reminder:** don't hate the player, hate the game*)
 
 ### How To Play
 
@@ -23,17 +23,21 @@ It's a HTML5/JS/CSS cat bingo web game (based on [the *popular* board game of th
 * Support for other languages e.g., German (if I can still remember it from my GCSE back in 2018), Greek (if Duolingo actually teaches me some relevant words/phrases, although I've only got a streak of 24 days, so might be a few years yet), Spanish, and French (both once I've completed the Greek course on Duolingo)
 * Leaderboard
 * Ads, so I can hopefully make some money out of this lol
-* Deployment
-* Some random web audio
 
 ### Current Issues
 * Some of the cat images are too close-up, so the image may appear to show a cat without a head/tail/legs etc. in some cases. But, I promise no cats were harmed in the making of this game.
 
 ### Acknowledgements
 * List of cat breeds from **Wikipedia**, images (mostly Wikimedia Commons, but check individual image credits for details)
+* Audio from **Freesound** (*obviously*): meow-1.wav by nathan-osman -- https://freesound.org/s/686775/ -- License: Creative Commons 0 and juich 1.wav by fons -- https://freesound.org/s/62375/ -- License: Creative Commons 0
 * **Marcel George/Laurence King Publishing** for the idea
 * **Chris's friends** at the New Year's Eve party I was invited to, for owning a copy of the game
 * **Penny and Adam**, for probably being the only people at least showing some interest in wanting to play this at some point haha :)
+
+### Contributions
+**Want to contribute...?**
+
+This web game is so complex that you will need strong experience in catology (minimum 5+ years), and at least 1 hour of experience in React/HTML5/CSS/Express etc. We can tell when you use ChatGPT to respond to our questions, so don't even consider...
 
 <!--
 
@@ -45,6 +49,6 @@ Does anyone ever really read the code or raw markdown version of the README?
 
 If you are reading this, the easter eggs haven't yet been added (well, maybe some have, but it's down to you to work out what they are - isn't this all part of the game too?)
 
-Last update: 9th Jan 2026
+Last update: 10th Jan 2026
 
 -->
